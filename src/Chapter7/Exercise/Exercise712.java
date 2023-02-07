@@ -1,0 +1,31 @@
+package Chapter7.Exercise;
+
+import java.security.spec.RSAOtherPrimeInfo;
+import java.util.Scanner;
+
+public class Exercise712 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        int[] numbers = new int[10];
+
+        //Invoke the method to reverse the numbers
+        reverse(numbers);
+
+        //Display the numbers
+        for (int e: numbers){
+            System.out.print(e + " ");
+        }
+        System.out.println();
+    }
+     /** Method reverse reverses the array passed in the argument */
+     public static void reverse(int[] list){
+         int temp;
+         for (int i = 0, j = list.length - 1; i < list.length / 2; i++,
+         j--){
+             temp = list[i];
+             list[i] = list[j];
+             list[j] = temp;
+         }
+     }
+}
