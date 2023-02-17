@@ -17,12 +17,12 @@ public class Exercise331 {
         {
             case 0: System.out.print("Enter the dollar amount: ");
                 amount = input.nextDouble();
-                System.out.println("$" + amount + " is " +
-                        (amount * rate) + " yuan"); break;
+                System.out.println("$" + amount + " is " + (amount * rate) + " yuan");
+                break;
             case 1: System.out.print("Enter the RMB amount: ");
                 amount = input.nextDouble();
-                System.out.println(amount + " yuan is $" +
-                        ((int)((amount * 100) / rate)) / 100.0); break;
+                System.out.println(amount + " yuan is $" + ((int)((amount * 100) / rate)) / 100.0);
+                break;
             default: System.out.println("Incorrect input");
         }
     }
